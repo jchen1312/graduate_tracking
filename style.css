@@ -1,0 +1,65 @@
+body {
+    background-color: azure;
+}
+
+.nav, .nav-pills, .nav-stacked{
+    width: 20%;
+    position: fixed;
+    background-color: red;
+}
+
+.nav{
+    float: left;
+    height:100vh;
+}
+
+
+.page-header{
+    height: 50px;
+    background-color: blue;
+    margin-top: 0;
+}
+
+h1,h2,h3{
+    padding: 0;
+    margin-top: 0;
+}
+
+.jumbotron{
+    background-color: dodgerblue;
+    float: right;
+    width: 80%;
+    position: relative;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow-y: hidden;
+}
+
+.jumbotron .container{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    right: 50px;
+    bottom: 50px;
+    width: auto;
+    height: auto;
+    background-color: coral;
+}
+
+.ui-tabs-nav {
+    background-color: pink !important; /*To overwrite jquery-ui.css*/
+}
+
+/*.ui-tabs .ui-corner-all {*/
+    /*width: inherit;*/
+    /*background-color: black;*/
+/*}*/
+
+#tabs{
+    background-color: black;
+    width: inherit;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
