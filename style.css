@@ -1,11 +1,15 @@
 body {
-    background-color: azure;
+    background-color: ;
 }
-
-.nav, .nav-pills, .nav-stacked{
+.tab-content {
+	width:80%;
+	margin-left: 20%;
+}
+.leftSide{
     width: 20%;
     position: fixed;
     background-color: red;
+	
 }
 
 .nav{
@@ -13,7 +17,17 @@ body {
     height:100vh;
 }
 
+#inner {
+    width: 50%;
+    margin: 0 auto; 
+}
 
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+}
 .page-header{
     height: 50px;
     background-color: blue;
@@ -27,8 +41,8 @@ h1,h2,h3{
 
 .jumbotron{
     background-color: dodgerblue;
-    float: right;
-    width: 80%;
+	margin-left:30%;
+    
     position: relative;
     height: 100vh;
     padding: 0;
@@ -45,6 +59,7 @@ h1,h2,h3{
     width: auto;
     height: auto;
     background-color: coral;
+	
 }
 
 .ui-tabs-nav {

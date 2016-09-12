@@ -4,44 +4,61 @@
     <meta charset="UTF-8">
     <title> Graduate Tracking </title>
     <!--Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
-    <script src="code.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<ul class="nav nav-pills nav-stacked">
-    <li>
+  <ul class="nav nav-pills nav-stacked leftSide">
+	<li>
         <img src="thorp.jpg" height="150">
         <div>
             <h1> Holden Thorp </h1>
             <h4> Ph.D Student </h4>
             <h4> 1234567 </h4>
         </div>
-    </li>
-    <li class="active"> <a href="#"> Basic Info </a> </li>
-    <li class="active"> <a href="#"> Requirements </a> </li>
-    <li class="active"> <a href="#"> Course History and Grades </a> </li>
-</ul>
-<div class="jumbotron">
-    <div class="container">
-        <div id="tabs">
-            <ul>
-                <li><a href="#tabs-1">Masters</a></li>
-                <li><a href="#tabs-2">Ph.D</a></li>
-            </ul>
-            <div id="tabs-1">
-                <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
-            </div>
-            <div id="tabs-2">
-                <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
-            </div>
-        </div>
+	</li>
+	
+    <li class="active"><a data-toggle="pill" href="#basic">Basic</a></li>
+    <li><a data-toggle="pill" href="#require">Requirements</a></li>
+    <li><a data-toggle="pill" href="#courses">Courses</a></li>
+   
+  </ul>
+  
+  <div class="tab-content">
+    <div id="basic" class="tab-pane fade in active">
+      <h3>Basic</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
-</div>
+    <div id="require" class="tab-pane fade">
+      <div class="jumbotron">
+		<div class="container">
+			<div id="tabs">
+				<ul class="nav nav-pills">
+					  <li class="active"><a data-toggle="pill" href="#master">Master</a></li>
+					<li><a data-toggle="pill" href="#phd">PHD</a></li>
+  
+				</ul>
+				<div id="master" class="tab-pane fade in active">
+					<h3>Master</h3>
+					</div>
+				<div id="phd" class="tab-pane fade">
+					<h3> PHD</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+    <div id="courses" class="tab-pane fade">
+      <h3>Courses</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+  </div>
+
+
+	
+
+
 </body>
 </html>
