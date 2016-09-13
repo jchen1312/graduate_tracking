@@ -1,11 +1,14 @@
-body {
-    background-color: azure;
-}
+body { padding-bottom: 20px; }
 
-.nav, .nav-pills, .nav-stacked{
+.tab-content {
+	width:80%;
+	margin-left: 20%;
+}
+.leftSide{
     width: 20%;
     position: fixed;
-    background-color: red;
+    background-color: #7BAFD4;
+	
 }
 
 .nav{
@@ -13,10 +16,32 @@ body {
     height:100vh;
 }
 
+.nav li div  {
+    padding-left: 20px;
+}
+.nav li img  {
+    padding-left: 20px;
+}
+
+#inner {
+    width: 50%;
+    margin: 0 auto; 
+}
+
+.form-group{
+    margin-right: 20px;
+ 
+}
+.form-inline{
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+
+}
 
 .page-header{
     height: 50px;
-    background-color: blue;
+    background-color: green;
     margin-top: 0;
 }
 
@@ -26,9 +51,9 @@ h1,h2,h3{
 }
 
 .jumbotron{
-    background-color: dodgerblue;
-    float: right;
-    width: 80%;
+    background-color: white;
+	margin-left:30%;
+    
     position: relative;
     height: 100vh;
     padding: 0;
@@ -44,7 +69,8 @@ h1,h2,h3{
     bottom: 50px;
     width: auto;
     height: auto;
-    background-color: coral;
+    background-color: white;
+	
 }
 
 .ui-tabs-nav {
@@ -57,9 +83,28 @@ h1,h2,h3{
 /*}*/
 
 #tabs{
-    background-color: black;
+    background-color: white;
     width: inherit;
     height: 100%;
     padding: 0;
     margin: 0;
 }
+#basic{
+    padding-left: 10px;
+}
+#wrap {
+  min-height: 100%;
+}
+
+#main {
+  overflow:auto;
+  padding-bottom:150px; /* this needs to be bigger than footer height*/
+}
+
+.footer {
+  position: relative;
+  margin-top: -150px; /* negative value of footer height */
+  height: 150px;
+  clear:both;
+  padding-top:20px;
+} 

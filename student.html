@@ -4,44 +4,169 @@
     <meta charset="UTF-8">
     <title> Graduate Tracking </title>
     <!--Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
-    <script src="code.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<ul class="nav nav-pills nav-stacked">
-    <li>
+  <ul class="nav nav-pills nav-stacked leftSide">
+	<li>
         <img src="thorp.jpg" height="150">
         <div>
             <h1> Holden Thorp </h1>
             <h4> Ph.D Student </h4>
             <h4> 1234567 </h4>
         </div>
-    </li>
-    <li class="active"> <a href="#"> Basic Info </a> </li>
-    <li class="active"> <a href="#"> Requirements </a> </li>
-    <li class="active"> <a href="#"> Course History and Grades </a> </li>
-</ul>
-<div class="jumbotron">
-    <div class="container">
-        <div id="tabs">
-            <ul>
-                <li><a href="#tabs-1">Masters</a></li>
-                <li><a href="#tabs-2">Ph.D</a></li>
-            </ul>
-            <div id="tabs-1">
-                <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+	</li>
+    <li class="active"><a data-toggle="pill" href="#basic">Basic</a></li>
+    <li><a data-toggle="pill" href="#require">Requirements</a></li>
+    <li><a data-toggle="pill" href="#courses">Courses</a></li>
+   
+  </ul>
+  
+  <div class="tab-content">
+    <div id="basic" class="tab-pane fade in active">
+      <h3>General</h3>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <form class="form-inline">
+            <div class="form-group">
+                <label for="general-name">First</label>
+                <input type="text" class="form-control" id="general-name" placeholder="Holden ">
             </div>
-            <div id="tabs-2">
-                <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+            <div class="form-group">
+                <label for="general-name">Last</label>
+                <input type="text" class="form-control" id="general-name" placeholder="Thorp">
+            </div>
+            <div class="form-group">
+                <label for="general-pid">PID</label>
+                <input type="text" class="form-control" id="general-name" placeholder="1234567 ">
+            </div>
+        </form>
+        <form class="form-inline">
+            <div class="form-group">
+                <label for="general-name">Sex</label>
+                <label class="form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> female</label>
+                <label class="form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> male</label>
+                <label class="form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> other</label>            
+            </div>
+            <div class="form-group">
+                <label for="general-name">Ethnicity</label>
+                <input type="text" class="form-control" id="general-name" placeholder="Thorp">
+            </div>
+            
+        </form>
+                <form class="form-inline">
+            <div class="form-group">
+                <label for="general-name">NC Resident</label>
+                <label class="form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> yes</label>
+                <label class="form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> no</label>            
+                    </div>
+            <div class="form-group">
+                <label for="general-name">Citizenship</label>
+                <input type="text" class="form-control" id="general-name" placeholder="Thorp">
+            </div>
+            
+        </form>
             </div>
         </div>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                 <form class="form-inline">
+            <div class="form-group">
+                <label for="general-name">Intended Degree</label>
+                <input type="text" class="form-control" id="general-name" placeholder="Doctorate ">
+            </div>
+            <div class="form-group">
+                <label for="general-name">Status</label>
+                <input type="text" class="form-control" id="general-name" placeholder="Full TIme">
+            </div>
+            <div class="form-group">
+                <label for="general-name">DateIntoCS</label>
+                <input type="date" class="form-control" id="general-name" >
+            </div>
+        </form>
+                 <form class="form-inline">
+            <div class="form-group">
+                <label for="general-name">Funding Eligibility</label>
+                <input type="text" class="form-control" id="general-name" >
+            </div>
+            <div class="form-group">
+                <label for="general-name">Funding Status</label>
+                <input type="text" class="form-control" id="general-name" >
+            </div>
+        </form>
+                <form class="form-inline">
+            <div class="form-group">
+                <label for="general-name">SemestersEnrolled</label>
+                <input type="number" class="form-control" id="general-name" >
+            </div>
+            <div class="form-group">
+                <label for="general-name">Leave/Extention Approved</label>
+                <input type="number" class="form-control" id="general-name" >
+            </div>
+        </form>
+                <form class="form-inline">
+            <div class="form-group">
+                <label for="general-name">Courses Taken</label>
+                <input type="number" class="form-control" id="general-name" >
+            </div>
+            <div class="form-group">
+                <label for="general-name">Credit Hours Completed</label>
+                <input type="number" class="form-control" id="general-name" >
+            </div>
+                    <div class="form-group">
+                <label for="general-name">Advisor</label>
+                <input type="text" class="form-control" id="general-name" >
+            </div>
+                  
+        </form>
+                <form class="form-inline">
+            
+                    <div class="form-group">
+                <label for="general-name">Background approved</label>
+                <input type="date" class="form-control" id="general-name" >
+            </div>
+        </form>
+            </div>
+        </div>
+         
     </div>
+    <div id="require" class="tab-pane fade">
+      <div class="jumbotron">
+		<div class="container">
+			<div id="tabs">
+				<ul class="nav nav-pills">
+					  <li class="active"><a data-toggle="pill" href="#master">Master</a></li>
+					<li><a data-toggle="pill" href="#phd">PHD</a></li>
+  
+				</ul>
+				<div id="master" class="tab-pane fade in active">
+					<h3>Master</h3>
+					</div>
+				<div id="phd" class="tab-pane fade">
+					<h3> PHD</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+    <div id="courses" class="tab-pane fade">
+      <h3>Courses</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+  </div>
+<div id="wrap">
+  <div id="main" class="container clear-top">
+  </div>
 </div>
+<footer class="footer"></footer>
+    
 </body>
 </html>
